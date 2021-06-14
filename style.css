@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;
+    color: #FFF;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    width: 250px;
+    padding: .3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: 2px solid rgb(59, 51, 51);
+}
+
+input {
+    width: 250px;
+    display: inline-block;
+    padding: .3rem;
+    border: 2px solid rgb(158, 45, 45);
+}
+
+input[type=submit] {
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    background-color: rgb(146, 135, 135);
+}
+
+.cad-list {
+    display: flex;
+    margin: .5rem;
+}
+
+.cad-list button {
+    width: 150px;
+    height: 25px;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: #524f4f;
+}
+
+.cad-list button a {
+    color: #000000;
+}
