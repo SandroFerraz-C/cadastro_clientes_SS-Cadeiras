@@ -39,7 +39,6 @@ $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;
 
 
 $res_clientes = "SELECT * FROM clientes LIMIT $inicio, $qnt_result_pg";
-
 $resulta_clientes =  mysqli_query($conn, $res_clientes);
 while($row_cliente = mysqli_fetch_assoc($resulta_clientes)){
   echo "ID:" . $row_cliente['id'] . "<br />";
@@ -52,7 +51,8 @@ while($row_cliente = mysqli_fetch_assoc($resulta_clientes)){
   echo "Produto Comprado " . $row_cliente['produtoComprado'] . "<br />";
   echo "Valor da Compra: " . $row_cliente['valorCompra'] . "<br />";
   echo "Cadastrado em: " . $row_cliente['created'] . "<br />";
-  echo "<a href ='edit_cliente.php?id =" . $row_cliente['id'] . "'>Editar</a><br /><br /><hr/><br />";
+  echo "<a href ='edit_cliente.php?id=" . $row_cliente['id'] . "'>Editar</a><br />";
+  echo "<a href ='proc_apagar_cliente.php?id=" . $row_cliente['id'] . "'>Apagar</a><br /><br /><hr/><br />";
 }
 
 // Paginação - Somar a quantidade de Clientes Cadastrados

@@ -24,9 +24,10 @@ $row_cliente = mysqli_fetch_assoc($resultado_cliente);
 </div>
   <h1>Editar Cliente</h1>
   <?php 
-    if(isset( $_SESSION['msg'] ))
+    if(isset( $_SESSION['msg'] )){
     echo $_SESSION['msg'];
     unset( $_SESSION['msg'] );
+    }
   ?>
 
   <form method="POST" action="proc_edit_cliente.php">

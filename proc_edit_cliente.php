@@ -24,6 +24,5 @@ if(mysqli_affected_rows ($conn)){
   $_SESSION['msg'] = "<h2 style='color:red;'>Usuario não Editado!</h2>";
 
   header("Location: edit_cliente.php?id = $id");
-
 }
 ?>
